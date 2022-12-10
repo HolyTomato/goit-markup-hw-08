@@ -1,0 +1,40 @@
+.logo {
+	padding-top: 24px;
+	padding-bottom: 25px;
+
+	font-family: "Raleway", sans-serif;
+	color: $accent-color;
+	font-size: 26px;
+	line-height: $main-line-height;
+
+	@media screen and (max-width: $tablet) {
+		padding-top: 16px;
+		padding-bottom: 16px;
+		font-size: 24px;
+		line-height: calc(28 / 24);
+	}
+
+}
+
+.logo-studio {
+	font-family: "Raleway", sans-serif;
+	color: #000000;
+	font-size: 26px;
+	line-height: $main-line-height;
+
+	@media screen and (max-width: $tablet) {
+		font-size: 24px;
+		line-height: calc(28 / 24);
+	}
+}
+
+.footer__logo {
+	display: inline-block;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-bottom: 20px;
+}
+
+.footer__logo-studio {
+	color: $primary-white-color;
+}
