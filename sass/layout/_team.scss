@@ -10,7 +10,6 @@
     
 	@media screen and(max-width: $desktop) {
 		flex-wrap: wrap;
-	
 	}
 
 }
@@ -23,23 +22,26 @@
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 
+	@media screen and (min-width: 1200px) {
+		&:last-child {
+	margin-right: 0;}
+	}
+	
+	@media screen and (max-width: $desktop) {
+		width: 354px;
+		margin-right: 30px;
+		margin-bottom: 30px;
+	}
+	
 	@media screen and (max-width: $tablet) {
 		width: 450px;
 		margin-right: 0;
 		margin-bottom: 30px;
 	}
 
-	@media screen and (max-width: $desktop) {
-		width: 354px;
-		margin-right: 30px;
-		margin-bottom: 30px;
+	
 
-	}
-}
-
-.team__item{
- &:last-child {
-	margin-right: 0;}
+	
 }
 
 .team__description {

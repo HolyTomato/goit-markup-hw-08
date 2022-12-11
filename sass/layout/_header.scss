@@ -2,13 +2,14 @@
 	display: flex;
 	margin-left: 93px;
 	
+	@media screen and (max-width: $desktop) {
+   	 margin-left: 87px;
+    }
+	
 	@media screen and (max-width: $tablet) {
 	display: none;
-   }
+    }
 
-   @media screen and (max-width: $desktop) {
-   	 margin-left: 87px;
-   }
 }
 	
 .site-nav__item+.site-nav__item {
@@ -26,9 +27,6 @@
 	transition-property: color;
 	transition: transform $cubic;
 
-	@media screen and (max-width: $desktop) {
-		
-	}
 }
 
 .site-nav__link{
@@ -70,9 +68,16 @@
 	display: flex;
 	margin-left: auto;
 
+	@media screen and (max-width: $desktop) {
+		flex-wrap: wrap;
+		margin-left: 96px;
+	}
+	
 	@media screen and (max-width: $tablet) {
 		display: none;
 	}
+
+	
 }
 
 .contact-nav__link {
