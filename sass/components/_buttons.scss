@@ -117,7 +117,10 @@
 }
 
 .menu-mobile__button {
-	
+	cursor: pointer;
+	border: none;
+	background-color: $primary-white-color;
+
 	@media screen and (max-width: $tablet) {
 		position: relative;
 		display: flex;
