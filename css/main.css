@@ -932,9 +932,9 @@ img {
 }
 
 .activity {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -942,7 +942,7 @@ img {
 
 .activity__item {
   display: block;
-  width: 370px;
+  width: 380px;
   margin-right: 30px;
 }
 
@@ -1071,9 +1071,9 @@ img {
 }
 
 .clients__item {
-  width: 170px;
+  width: 180px;
   height: 92px;
-  margin-right: 30px;
+  margin-right: 23px;
 }
 @media screen and (max-width: 1199px) {
   .clients__item {
