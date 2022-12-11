@@ -7,6 +7,10 @@
 	width: 528px;
 	
 	background-color: #fff;
+
+	@media screen and (max-width: $desktop) {
+		width: 450px;
+	}
 }
 
 .modal-close {
@@ -131,6 +135,14 @@
 	display: flex;
 	align-items: center;
 	margin-bottom: 30px;
+
+	@media screen and(max-width: $desktop) {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: calc(14 / 12);
+		
+		letter-spacing: 0.03em;
+	}
 }
 
 .terms-input {
