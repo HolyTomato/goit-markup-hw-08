@@ -12,32 +12,29 @@
 
 .footer__navigation{
 	
-	@media screen and (max-width: $desktop) {
+	@media screen and (max-width: 1199px) {
 		margin-left: 89px;
 	}
 	
-	@media screen and (max-width: $tablet) {
+	@media screen and (max-width: 767px) {
 		display: inline-flex;
 		flex-direction: column;
 		align-items: center;
 		margin-bottom: 60px;
 		margin-left: 0;
 	}
-
-	
-
 }
 
 .footer-nav {
 	display: flex;
 	align-items: baseline;
 	
-	@media screen and (max-width: $tablet) {
+	@media screen and (max-width: 767px) {
 		flex-direction: column;
 		align-items: center;
 	}
 
-	@media screen and (max-width: $desktop) {
+	@media screen and (max-width: 1199px) {
 		flex-wrap: wrap;
 		text-align: center;
 	}
@@ -73,17 +70,16 @@
 	transition-property: color;
 	transition: transform $cubic;
 
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}	
+
 	@media screen and (max-width: $tablet) {
 		align-items: center;
-	}	
+	}
 }
 
-.address{
- &:hover,
- &:focus {
-	color: $accent-color;}
-
-}
 
 .join {
 	margin-bottom: 10px;
@@ -96,7 +92,7 @@
 
 	color: $primary-white-color;
 
-	@media screen and (max-width: $desktop) {
+	@media screen and (max-width: 1199px) {
 		justify-content: center;
 		margin-bottom: 20px;
 		text-align: center;
@@ -107,7 +103,7 @@
 	display: inline-block;
 	margin-left: 70px;
 
-	@media screen and (max-width: $desktop) {
+	@media screen and (max-width: 1199px) {
 		display: inline-flex;
 		flex-direction: column;
 		justify-content: center;
@@ -115,7 +111,7 @@
 		margin-bottom: 60px;
 	}
 
-	@media screen and (max-width: $tablet) {
+	@media screen and (max-width: 767px) {
 		margin-left: 0;
 	}
 }
@@ -149,17 +145,20 @@
 }
 
 .footer-subscribe {
-	margin-left: 93px;
-
-	@media screen and(max-width: $desktop) {
+	
+	@media screen and(min-width: $phone) {
 		display: inline-flex;
 		justify-content: center;
 		margin: auto;
 	}
+
+	@media screen and (min-width: $desktop) {
+		margin-left: 93px;
+	}
 }
 
 .footer-subscribe__form{
-	@media screen and (max-width: $desktop) {
+	@media screen and (max-width: 1199px) {
 		display: inline-flex;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -183,7 +182,7 @@
 		outline: 1px solid $primary-white-color;
 	}
 	
-	@media screen and (max-width: $desktop) {
+	@media screen and (max-width: 1199px) {
 		width: 100%;
 		margin-top: 0;
 		margin-bottom: 20px;

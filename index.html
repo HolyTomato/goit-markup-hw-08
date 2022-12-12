@@ -56,7 +56,7 @@
               </svg> +38 096 111 11 11</a>
           </li>
         </ul>
-          <button class="menu-mobile__button" .js-open-menu>
+          <button class="menu-mobile__button .js-open-menu" >
           <svg class="menu-mobile__icon" width="44" height="44">
             <use href="./images/icons.svg#menu-mobile"></use>
           </svg></button>
@@ -130,29 +130,45 @@
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="activity">
             <li class="activity__item">
-              <div class="activity__img"><img 
+              <div class="activity__img">
+                <picture>
+                  <source 
+                    media="(min-width: 1200px )" 
+                    srcset="images\feature\imgact1x.jpg 1x, images\feature\imgact2x.jpg 2x" 
+                    type="image/jpg">
+                  <img 
                 src="./images/feature/desctop.jpg"
                 alt="Десктопні додатки"
                 width="370"
-              />
+              /></picture>
               <p class="activity__overlay">десктопні додатки</p>
               </div>         
             </li>
             <li class="activity__item">
-              <div class="activity__img"> <img
+              <div class="activity__img">
+                <picture>
+                  <source 
+                    media="(min-width: 1200px )" 
+                    srcset="images\feature\imgact1x-1.jpg 1x, images\feature\imgact2x-1.jpg 2x" 
+                    type="image/jpg"> <img
                 src="./images/feature/apps.jpg"
                 alt="мобільні додатки"
                 width="370"
-              />
+              /></picture>
               <p class="activity__overlay">мобільні додатки</p>
               </div>
             </li>
             <li class="activity__item">
-              <div class="activity__img"><img
+              <div class="activity__img">
+                <picture>
+                  <source 
+                    media="(min-width: 1200px )" 
+                    srcset="images\feature\imgact1x-2.jpg 1x, images\feature\imgact2x-2.jpg 2x" 
+                    type="image/jpg"><img
                 src="./images/feature/design.jpg"
                 alt="дизайнерські рішення"
                 width="370"
-              />
+              /></picture>
               <p class="activity__overlay">дизайнерські рішення</p>
               </div>
             </li>
@@ -166,11 +182,20 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
+              <picture>
+                <source media="(min-width: 1200px)" 
+                        srcset="images\team\proddesc1x270.jpg 1x, images\team\proddesc2x540.jpg 2x" 
+                        type="image/jpg">
+                <source media="(min-width: 768px)" 
+                        srcset="images\team\prodtab1x354.jpg 1x, images\team\prodtab2x708.jpg 2x" 
+                        type="image/jpg">
+                <source media="(min-width: 480px)" 
+                        srcset="images\team\prodmobc1x450.jpg 1x, images\team\prodmob2x900.jpg 2x" 
+                        type="image/jpg">
               <img
                 src="./images/team/product.jpg"
                 alt="Дизайнер продукту"
-                width="270"
-              />
+              /></picture>
               <div class="team__description">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
               <p>Product Designer</p>
@@ -182,11 +207,20 @@
             </ul></div>
             </li>
             <li class="team__item">
+              <picture>
+                <source media="(min-width: 1200px)" 
+                        srcset="images\team\deVdesc1x270.jpg 1x, images\team\deVdesc2x540.jpg 2x" 
+                        type="image/jpg">
+                <source media="(min-width: 768px)" 
+                        srcset="images\team\deVtab1x354.jpg 1x, images\team\deVtab2x708.jpg 2x" 
+                        type="image/jpg">
+                <source media="(min-width: 480px)" 
+                        srcset="images\team\deVmobc1x450.jpg 1x, images\team\deVmob2x900.jpg 2x" 
+                        type="image/jpg">
               <img
                 src="./images/team/developer.jpg"
                 alt="Фронтенд розробник"
-                width="270"
-              />
+              /></picture>
              <div class="team__description"> <h3 class="team__name">Ольга Рєпіна</h3>
               <p>Frontend Developer</p>
             <ul class="socials">
@@ -197,11 +231,20 @@
             </ul></div>
             </li>
             <li class="team__item">
+              <picture>
+                <source media="(min-width: 1200px)" 
+                        srcset="images\team\mardesc1x270.jpg 1x, images\team\mardesc2x540.jpg 2x" 
+                        type="image/jpg">
+                <source media="(min-width: 768px)" 
+                        srcset="images\team\martab1x354.jpg 1x, images\team\martab2x708.jpg 2x" 
+                        type="image/jpg">
+                <source media="(min-width: 480px)" 
+                        srcset="images\team\marmobc1x450.jpg 1x, images\team\marmob2x900.jpg 2x" 
+                        type="image/jpg">
               <img
                 src="./images/team/marketing.jpg"
                 alt="Маркетинг"
-                width="270"
-              />
+              /></picture>
               <div class="team__description"> 
                 <h3 class="team__name">Микола Тарасов</h3>
               <p>Marketing</p>
@@ -213,11 +256,20 @@
             </ul></div>
               </li>
             <li class="team__item">
+              <picture>
+                <source media="(min-width: 1200px)" 
+                        srcset="images\team\desdesc1x270.jpg 1x, images\team\desdesc2x540.jpg 2x" 
+                        type="image/jpg">
+                <source media="(min-width: 768px)" 
+                        srcset="images\team\destab1x354.jpg 1x, images\team\destab2x708.jpg 2x" 
+                        type="image/jpg">
+                <source media="(min-width: 480px)" 
+                        srcset="images\team\desmobc1x450.jpg 1x, images\team\desmob2x900.jpg 2x" 
+                        type="image/jpg">
               <img
                 src="./images/team/designer.jpg"
                 alt="Дизайнер інтерфейсу"
-                width="270"
-              />
+              /></picture>
               <div class="team__description">
                 <h3 class="team__name">Михайло Єрмаков</h3>
               <p>UI Designer</p>
@@ -370,9 +422,9 @@
            </form>
           </div>
         </div>
-        <div class="menu backdrop is-hidden" .js-menu-container>
+        <div class="menu backdrop is-hidden .js-menu-container">
         <div class="menu-container">
-          <button class="menu__button-close" .js-close-menu>
+          <button class="menu__button-close .js-close-menu" >
             <svg class="menu__icon" width="19" height="19" >
               <use href="./images/icons.svg#close"></use>
             </svg></button>
