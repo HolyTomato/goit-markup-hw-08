@@ -8,9 +8,26 @@
 	width: 480px;
 	height: 796px;
 	padding: 48px 40px;
+	z-index: 999;
 	
 	background-color: #fff;
+
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
 }
+
+.menu-container.is-open {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: initial;
+}
+
+// .menu-container .is-hidden {
+// 	visibility: hidden;
+// 	opacity: 0;
+// 	pointer-events: none;
+// }
 	
 .menu-mobile__icon{
 	fill: #000000;
@@ -49,10 +66,12 @@
 }
 
 .menu__contacts-item{
+
 	margin-bottom: 32px;
+	
 	&:last-child {
-			margin-bottom: 0;
-		}
+		margin-bottom: 0;
+	}
 }
 
 .menu__contacts-link{
@@ -81,7 +100,6 @@
 
 .menu__socials-item{
     position: relative;
-
 }
 
 .menu__socials-item:not(:last-child)::after {
