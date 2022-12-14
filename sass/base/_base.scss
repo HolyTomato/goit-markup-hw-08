@@ -57,7 +57,7 @@ img {
 		width: 480px;
     }
 	
-	@media  screen and (min-width: $tablet) {
+	@media screen and (min-width: $tablet) {
 		width: 768px;
 	}
 	
@@ -83,7 +83,8 @@ img {
 .main-nav {
 	display: inline-flex;
 	align-items: center;
-
+	width: 100%;
+	
 	@media screen and (min-width: $phone) {
 		height: 60px;
 	}
