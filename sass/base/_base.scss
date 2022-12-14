@@ -64,8 +64,6 @@ img {
 	@media screen and (min-width: $desktop) {
 	    width: 1200px;
 	}
-	
-	
 }
 
 .sections {
@@ -93,8 +91,10 @@ img {
  	@media screen and (min-width: $tablet) {
 		height: 80px;
 	}
-	
-	
+
+	@media screen and (min-width: $desktop) {
+		display: flex;
+	}
 }
 
 .line {

@@ -56,7 +56,7 @@
               </svg> +38 096 111 11 11</a>
           </li>
         </ul>
-          <button class="menu-mobile__button .js-open-menu" >
+          <button class="menu-mobile__button js-open-menu" >
           <svg class="menu-mobile__icon" width="44" height="44">
             <use href="./images/icons.svg#menu-mobile"></use>
           </svg></button>
@@ -195,6 +195,7 @@
               <img
                 src="./images/team/product.jpg"
                 alt="Дизайнер продукту"
+                loading="lazy"
               /></picture>
               <div class="team__description">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
@@ -220,6 +221,7 @@
               <img
                 src="./images/team/developer.jpg"
                 alt="Фронтенд розробник"
+                 loading="lazy"
               /></picture>
              <div class="team__description"> <h3 class="team__name">Ольга Рєпіна</h3>
               <p>Frontend Developer</p>
@@ -244,6 +246,7 @@
               <img
                 src="./images/team/marketing.jpg"
                 alt="Маркетинг"
+                 loading="lazy"
               /></picture>
               <div class="team__description"> 
                 <h3 class="team__name">Микола Тарасов</h3>
@@ -269,6 +272,7 @@
               <img
                 src="./images/team/designer.jpg"
                 alt="Дизайнер інтерфейсу"
+                 loading="lazy"
               /></picture>
               <div class="team__description">
                 <h3 class="team__name">Михайло Єрмаков</h3>
@@ -422,12 +426,12 @@
            </form>
           </div>
         </div>
-        <div class="menu-container is-open .js-menu-container" id="menu-container">
-          <button class="menu__button-close .js-close-menu" >
+        <div class="menu-container js-menu-container" id="menu-container">
+          <button class="menu__button-close js-close-menu" >
             <svg class="menu__icon" width="19" height="19" >
               <use href="./images/icons.svg#close"></use>
             </svg></button>
-          <ul>
+          <ul class="menu__list">
             <li class="menu__item"><a href="./index.html" class="menu__link">Студія</a></li>
             <li class="menu__item"><a href="./portfolio.html" class="menu__link">Портфоліо</a></li>
             <li class="menu__item"><a href="contacts" class="menu__link">Контакти</a></li>
