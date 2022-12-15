@@ -100,10 +100,6 @@
 .menu__socials{
 	display: inline-flex;
 	justify-content: space-between;
-
-	@media screen and (min-width: 320px) and (max-width: 479px) {
-		flex-direction: column;;
-	}
 }
 
 .menu__socials-item{
@@ -112,16 +108,6 @@
 
 	&:not(:last-child){
 		border-right: 1px solid rgba(33, 33, 33, 0.2);
-	}
-
-	@media screen and (min-width: 320px) and (max-width: 479px) {
-		&:nth-child(-n + 3){
-			border-right: none;
-		}
-
-		&:not(:last-child) {
-			border-bottom: 1px solid rgba(33, 33, 33, 0.2);
-		}
 	}
 }
 
@@ -139,6 +125,7 @@
 	@media screen and (min-width: 320px) and (max-width: 479px) {
 		padding-top: 10px;
 		padding-bottom: 10px;
+		font-size: 10px;
 	}
 }
 
