@@ -11,6 +11,12 @@
 	flex-wrap: wrap;
 	padding-top: 60px;
 	padding-bottom: 60px;
+	justify-content: center;
+
+	@media screen and (min-width: $phone) and (max-width: $desktop) {
+			padding-top: 0;
+			padding-bottom: 0;
+	}
 }
 
 .clients__item {
