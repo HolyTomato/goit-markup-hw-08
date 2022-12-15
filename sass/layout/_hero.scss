@@ -83,7 +83,7 @@
 	font-size: 44px;
 	line-height: 1.36;
 
-	@media screen and (max-width: $desktop) {
+	@media screen and (max-width: 1199px) {
 		font-size: 26px;
 		line-height: calc(42 / 26);
 		text-transform: uppercase;

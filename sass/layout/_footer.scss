@@ -12,16 +12,16 @@
 
 .footer__navigation{
 	
-	@media screen and (max-width: 1199px) {
-		margin-left: 89px;
-	}
-	
-	@media screen and (max-width: 767px) {
+	@media screen and (min-width: 320px) and (max-width: 767px) {
 		display: inline-flex;
 		flex-direction: column;
 		align-items: center;
 		margin-bottom: 60px;
 		margin-left: 0;
+	}
+
+	@media screen and (min-width: $tablet) and (max-width: 1199px) {
+		margin-left: 89px;
 	}
 }
 
@@ -53,7 +53,7 @@
 
 .footer__item{
 
-    @media screen and (max-width: $desktop) {
+    @media screen and (max-width: 1199px) {
 		display: flex;
 		justify-content: center;
 	}
@@ -82,8 +82,6 @@
 
 
 .join {
-	margin-bottom: 10px;
-
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 14px;
@@ -146,7 +144,7 @@
 
 .footer-subscribe {
 	
-	@media screen and(min-width: $phone) {
+	@media screen and (max-width: $tablet) {
 		display: inline-flex;
 		justify-content: center;
 		margin: auto;
@@ -162,14 +160,15 @@
 		display: inline-flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		width: 450px;
 	}	
 }
 
-
 .footer__subscribe-input {
+	box-sizing: border-box;
 	margin-top: 10px;
 	padding-left: 16px;
-	width: 360px;
+	width: 358px;
 	height: 50px;
 
 	background-color: $background-color;
