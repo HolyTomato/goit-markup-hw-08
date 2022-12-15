@@ -12,6 +12,9 @@
 
 .footer__navigation{
 	
+	@media screen and (min-width: $tablet) and (max-width: 1199px) {
+		margin-left: 89px;
+	}
 	@media screen and (min-width: 320px) and (max-width: 767px) {
 		display: inline-flex;
 		flex-direction: column;
@@ -20,9 +23,7 @@
 		margin-left: 0;
 	}
 
-	@media screen and (min-width: $tablet) and (max-width: 1199px) {
-		margin-left: 89px;
-	}
+	
 }
 
 .footer-nav {
@@ -82,6 +83,7 @@
 
 
 .join {
+
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 14px;
@@ -89,6 +91,10 @@
 	letter-spacing: 0.03em;
 
 	color: $primary-white-color;
+
+	// @media screen and (min-width: 320px) and (max-width: 479px) {
+	// 	margin-bottom: 10px;
+	// }
 
 	@media screen and (max-width: 1199px) {
 		justify-content: center;
@@ -156,19 +162,27 @@
 }
 
 .footer-subscribe__form{
-	@media screen and (max-width: 1199px) {
-		display: inline-flex;
-		flex-wrap: wrap;
-		justify-content: center;
+	// display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	
+	@media screen and (min-width: 320px) and (max-width: 479px){
+		width: 320px;
+	}
+
+	@media screen and (min-width: $phone) and (max-width: 1199px) {
 		width: 450px;
 	}	
+
+	@media screen and(min-width: $desktop) {
+		display: flexbox;
+	}
 }
 
 .footer__subscribe-input {
 	box-sizing: border-box;
 	margin-top: 10px;
 	padding-left: 16px;
-	width: 358px;
 	height: 50px;
 
 	background-color: $background-color;
@@ -180,11 +194,19 @@
 	&:focus-visible{
 		outline: 1px solid $primary-white-color;
 	}
+
+	@media screen and (min-width: 320px) and (max-width: 479px){
+		width: 290px;
+	}
 	
-	@media screen and (max-width: 1199px) {
-		width: 100%;
+	@media screen and (min-width: $phone) and (max-width: 1199px) {
+		width: 450px;
 		margin-top: 0;
 		margin-bottom: 20px;
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: 358px;
 	}
 }
 
